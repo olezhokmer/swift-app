@@ -28,7 +28,7 @@ class Symbol {
 final class CryptoService {
     func fetchSymbols(completion: @escaping ([Symbol]?, Error?) -> Void) {
         // Define the API endpoint URL
-        let endpoint = "http://localhost:3000/crypto/markets?quote=USDT"
+        let endpoint = "http://ec2-13-39-13-224.eu-west-3.compute.amazonaws.com/crypto/markets?quote=USDT"
 
         // Create a URL object from the endpoint string
         guard let url = URL(string: endpoint) else {
